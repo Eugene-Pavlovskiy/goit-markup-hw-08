@@ -1,0 +1,43 @@
+/* --- Services --- */
+.services .title {
+  margin-bottom: 50px;
+}
+
+.services__item {
+  display: flex;
+  align-items: center;
+
+  & .services__item-list {
+    position: relative;
+  }
+}
+
+.services__item-list-cover {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  max-width: 370px;
+  min-height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.section-services-subtitle {
+  font-family: $main-font;
+  width: fit-content;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.services__item-list:not(:last-child) {
+  margin-right: 30px;
+}
