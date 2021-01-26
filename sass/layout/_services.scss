@@ -1,4 +1,10 @@
 /* --- Services --- */
+.services {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin: 0px;
+}
+
 .services .title {
   margin-bottom: 50px;
 }
@@ -40,4 +46,10 @@
 
 .services__item-list:not(:last-child) {
   margin-right: 30px;
+}
+
+@media screen and (max-width: 1199px) {
+  .services {
+    display: none;
+  }
 }
