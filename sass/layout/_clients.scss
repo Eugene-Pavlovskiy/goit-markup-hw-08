@@ -1,9 +1,14 @@
 /* --- Clients --- */
 .clients {
-  padding-top: 60px;
-  padding-bottom: 60px;
-
-  .& .title {
+  & .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  & .container {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  & .title {
     margin-bottom: 50px;
   }
 }
@@ -112,7 +117,6 @@
   }
 }
 
-
 // .clients__item {
 //   width: 170px;
 //   height: 90px;
@@ -144,5 +148,3 @@
 //     color: $accent-color;
 //   }
 // }
-
-
