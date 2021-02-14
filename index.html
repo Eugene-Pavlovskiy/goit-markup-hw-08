@@ -15,14 +15,14 @@
 
 <body>
 	<!-- Header -->
-	<!--<header class="header">
+	<!-- <header class="header">
 		<div class="container">
 			<a href="./index.html" class="brand__logo link">
 				Web<span style="color: rgb(3, 3, 3);">Studio</span>
 			</a>
 
 			<!-- Navigation -->
-			<!--<nav class="navigation">
+			<!-- <nav class="navigation">
 				<ul class="navigation__list list">
 					<li class="navigation__list-item">
 						<a class="navigation__list-link link current" style="color: #2196f3" href="./index.html">Студия</a>
@@ -34,11 +34,11 @@
 						<a class="navigation__list-link link" href="#Контакты">Контакты</a>
 					</li>
 				</ul>
-			</nav>
+			</nav> -->
 			<!-- End Navigation -->
 
 			<!-- Address -->
-			<!--<address class="address">
+			<!-- <address class="address">
 				<a href="mailto:info@devstudio.com" class="header__mail link">
 					<svg class="header__mail-logo">
 						<use href="./img/sprite.svg#icon-mail"></use>
@@ -72,7 +72,7 @@
 				</svg>
 			</button>
 		</div>
-	</header>
+	</header> -->
 	<!-- Main -->
 	<main>
 		<!-- Hero -->
@@ -135,16 +135,12 @@
 				<ul class="services__item list">
 					<li class="services__item-list">
 						<picture class="services__item-picture">
-							<source 
-								srcset="./img/what-we-do/coding_dekstop.webp 1x, ./img/what-we-do/coding_dekstop@2x.webp 2x," 
-								media="(min-width: 1200px)" 
-								type="image/webp">
-							
-							<source
-                                srcset="./img/what-we-do/coding_dekstop.jpg 1x, ./img/what-we-do/coding_dekstop@2x.jpg 2x"
-                                media="(min-width: 1200px)">
-						
-							<img class="services__item-img" src="./img/what-we-do/coding_desktop.jpg" alt="Десктопные приложения" width="370"/>
+							<img srcset="./img/what-we-do/coding_dekstop.webp 1x, 
+										 ./img/what-we-do/coding_dekstop@2x.webp 2x,
+										 ./img/what-we-do/coding_dekstop.jpg 1x, 
+										 ./img/what-we-do/coding_dekstop@2x.jpg 2x">
+							   <img src="./img/what-we-do/coding_desktop.jpg" 
+									alt="Десктопные приложения" width="370" />
 						</picture>
 						
 						<div class="services__item-list-cover">
@@ -153,16 +149,12 @@
 					</li>
 					<li class="services__item-list">
 						<picture class="services__item-picture">
-							<source 
-								srcset="./img/what-we-do/api_desktop.jpg.webp 1x, ./img/what-we-do/api_desktop@2x.webp 2x," 
-								media="(min-width: 1200px)" 
-								type="image/webp">
-							
-							<source
-                                srcset="./img/what-we-do/api_desktop.jpg 1x, ./img/what-we-do/api_desktop@2x.jpg 2x"
-                                media="(min-width: 1200px)">
-						
-							<img class="services__item-img" src="./img/what-we-do/api_desktop.jpg" alt="Мобильные приложения" width="370" />
+							<img srcset="./img/what-we-do/api_desktop.jpg.webp 1x, 
+										 ./img/what-we-do/api_desktop@2x.webp 2x, 
+										 ./img/what-we-do/api_desktop.jpg 1x, 
+										 ./img/what-we-do/api_desktop@2x.jpg 2x"
+									src="./img/what-we-do/api_desktop.jpg" 
+									alt="Мобильные приложения" width="370" />
 						</picture>
 						
 						<div class="services__item-list-cover">
@@ -171,16 +163,12 @@
 					</li>
 					<li class="services__item-list">
 						<picture class="services__item-picture">
-							<source 
-								srcset="./img/what-we-do/design_desktop.webp 1x, ./img/what-we-do/design_desktop@2x.webp 2x," 
-								media="(min-width: 1200px)" 
-								type="image/webp">
-							
-							<source
-                                srcset="./img/what-we-do/design_desktop.jpg 1x, ./img/what-we-do/design_desktop@2x.jpg 2x"
-                                media="(min-width: 1200px)">
-						
-								<img class="services__item-img" src="./img/what-we-do/design_desktop.jpg" alt="Дизайнерские решения" width="370" />
+							<img srcset="./img/what-we-do/design_desktop.webp 1x, 
+										./img/what-we-do/design_desktop@2x.webp 2x, 
+										./img/what-we-do/design_desktop.jpg 1x, 
+										./img/what-we-do/design_desktop@2x.jpg 2x"
+									src="./img/what-we-do/design_desktop.jpg" 
+									alt="Дизайнерские решения" width="370" />
 						</picture>
 						
 						<div class="services__item-list-cover">
@@ -201,7 +189,7 @@
 							<img class="team__item-img"
 								srcset="./img/team/mobile/igor-demiyanenko_mobile.jpg   450w,
 										./img/team/tablet/igor-demiyanenko_tablet.jpg   900w,
-										./img/team/desktop/igor-demiyanenko_desk.jpg 1350w"
+										./img/team/desktop/igor-demiyanenko_desk.jpg   1350w"
 								
 								src="./img/team/mobile/igor-demiyanenko_mobile.jpg"
 								sizes="(min-width: 1200px) 270px, 
@@ -211,7 +199,7 @@
 
 							<div class="team__item-content-wrapper">
 								<h3 class="subtitle">Игорь Демьяненко</h3>
-								<p class="description">Product Designer</p>
+								<p class="description" lang="en">Product Designer</p>
 							</div>
 							<ul class="social-list list">
 								<li class="social-list__item">
@@ -263,7 +251,7 @@
 								alt="Фотография Ольги Репиной" />
 							<div class="team__item-content-wrapper">	
 								<h3 class="subtitle">Ольга Репина</h3>
-								<p class="description">Frontend Developer</p>
+								<p class="description" lang="en">Frontend Developer</p>
 							</div>
 							<ul class="social-list list">
 								<li class="social-list__item">
@@ -316,7 +304,7 @@
 
 							<div class="team__item-content-wrapper">
 								<h3 class="subtitle">Николай Тарасов</h3>
-								<p class="description">Marketing</p>
+								<p class="description" lang="en">Marketing</p>
 							</div>
 							<ul class="social-list list">
 								<li class="social-list__item">
@@ -359,7 +347,7 @@
 							<img class="team__item-img"
 								srcset="./img/team/mobile/michail-yermakov_mobile.jpg   450w,
 										./img/team/tablet/michail-yermakov__tablet.jpg   900w,
-										./img/team/desktop/michail-yermakov_desk.jpg 1350w"
+										./img/team/desktop/michail-yermakov_desk.jpg    1350w"
 								
 								src="./img/team/mobile/michail-yermakov_mobile.jpg"
 								sizes="(min-width: 1200px) 270px, 
@@ -369,7 +357,7 @@
 
 							<div class="team__item-content-wrapper">
 								<h3 class="subtitle">Михаил Ермаков</h3>
-								<p class="description">UI Designer</p>
+								<p class="description" lang="en">UI Designer</p>
 							</div>
 							<ul class="social-list list">
 								<li class="social-list__item">
@@ -418,42 +406,42 @@
 				<ul class="clients__list list">
 					<li class="clients__item">
 						<a class="clients__item-link link" href="">
-							<svg class="clients__icon-1">
+							<svg class="clients__icon" width="44.27" height="49.23">
 								<use href="./img/sprite.svg#icon-client-1"></use>
 							</svg>
 						</a>
 					</li>
 					<li class="clients__item">
 						<a class="clients__item-link link" href="#">
-							<svg class="clients__icon-2">
+							<svg class="clients__icon" width="40" height="52">
 								<use href="./img/sprite.svg#icon-client-2"></use>
 							</svg>
 						</a>
 					</li>
 					<li class="clients__item">
 						<a class="clients__item-link link" href="#">
-							<svg class="clients__icon-3">
+							<svg class="clients__icon" width="41" height="52">
 								<use href="./img/sprite.svg#icon-client-3"></use>
 							</svg>
 						</a>
 					</li>
 					<li class="clients__item">
 						<a class="clients__item-link link" href="#">
-							<svg class="clients__icon-4">
+							<svg class="clients__icon" width="79.66" height="42">
 								<use href="./img/sprite.svg#icon-client-4"></use>
 							</svg>
 						</a>
 					</li>
 					<li class="clients__item">
 						<a class="clients__item-link link" href="#">
-							<svg class="clients__icon-5">
+							<svg class="clients__icon" width="59" height="47">
 								<use href="./img/sprite.svg#icon-client-5"></use>
 							</svg>
 						</a>
 					</li>
 					<li class="clients__item">
 						<a class="clients__item-link link" href="#">
-							<svg class="clients__icon-6">
+							<svg class="clients__icon" width="88" height="45">
 								<use href="./img/sprite.svg#icon-client-6"></use>
 							</svg>
 						</a>
@@ -497,8 +485,8 @@
 
 			<!--Footer Social-->
 			<div class="footer-social">
-				<p class="description">присоединяйтесь</p>
-				<ul class="social-list list">
+				<p class="footer-social description">присоединяйтесь</p>
+				<ul class="footer-social social-list list">
 					<li class="social-list__item">
 						<a class="social-list__link" 
 							href="https://www.instagram.com/">
@@ -543,8 +531,8 @@
 					<input class="footer-subscribe-input" type="email" name="email" id="email" placeholder="E-mail" />
 					<button type="submit" class="footer-email-btn">
 						Подписаться
-						<svg class="footer-email-btn__icon-send">
-							<use href="./img/sprite.svg#icon-send"></use>
+						<svg class="footer-email-btn__icon-send" width="24"	height="24">
+							<use href="./img/send.svg#icon-send"></use>
 						</svg>
 					</button>
 				</div>
