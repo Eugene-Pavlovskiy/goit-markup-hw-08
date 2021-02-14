@@ -1,13 +1,12 @@
 @media screen and (max-width: 767px) {
-  display: none;
+  .menu-container {
+    display: none;
   position: absolute;
   padding-top: 60px;
   padding-bottom: 60px;
   top: 100%;
   left: 0;
   width: 100%;
-
-  .menu-container {
     height: 400px;
     background-color: #ffffff;
     padding: 20px;
@@ -17,8 +16,6 @@
     &.is-open {
       display: block;
     }
-  
-    
   }
 }
 
