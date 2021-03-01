@@ -64,8 +64,7 @@ img {
 /* mobile */
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
-    padding: 0 15px;
+    width: 480px;
     margin: 0 auto;
   }
 }
