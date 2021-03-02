@@ -20,7 +20,7 @@
 			<a href="./index.html" class="brand__logo link">
 				Web<span style="color: rgb(3, 3, 3);">Studio</span>
 			</a>
-			<div class="menu-container" id="menu-container" data-menu>
+			<div class="menu-container">
 				<!-- Navigation -->
 				<nav class="navigation">
 					<ul class="navigation__list list">
@@ -35,8 +35,11 @@
 						</li>
 					</ul>
 				</nav>
-				<!-- End Navigation -->
-
+				<button type="button" class="burger-btn" data-menu-button>
+					<svg class="burger-icon">
+					    <use href="./images/sprite.svg#burger-icon"></use>
+					</svg>
+				</button>
 				<!-- Address -->
 				<address class="address">
 					<a href="mailto:info@devstudio.com" class="header__mail link">
@@ -52,6 +55,25 @@
 							+38 096 111 11 11
 					</a>
 				</address>
+			</div>
+			<div class="mobile-menu" data-menu>
+			    <button type="button" class="mobile-close-btn" data-menu-close>
+				<svg class="close-icon">
+				    <use href="./images/sprite.svg#close-icon"></use>
+				</svg>
+			    </button>
+			    <ul class="mobile-menu-nav list">
+				
+				<li class="mobile-menu-nav-item">
+				    <a href="" class="mobile-menu-nav-link link">Студия</a>
+				</li>
+				<li class="mobile-menu-nav-item">
+				    <a href="" class="mobile-menu-nav-link link">МПортфолио</a>
+				</li>
+				<li class="mobile-menu-nav-item">
+				    <a href="" class="mobile-menu-nav-link link">Контакты</a>
+				</li>
+			    </ul>
 			</div>
 			<button type="button" class="menu-button" 
 				aria-expanded="false" aria-controls="menu-container" data-menu-button>
