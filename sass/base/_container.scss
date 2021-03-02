@@ -1,11 +1,17 @@
 /* --- Container --- */
-/* smart-mobile */
+/* responsive-mobile */
 .container {
   width: 100%;
   padding: 0 15px;
+  
+  .header & {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
-/* mobile */
+/* adaptive-mobile */
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -16,15 +22,22 @@
 /* tablet */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
-    padding: 0 15px;
+    width: 720px;
+
+    .header & {
+      display: flex;
+      align-items: center;
+    }
+
+    .about & {
+      display: flex;
+    }
   }
 }
 
 /* desktop */
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
-    padding: 0 15px;
+    width: 1200px;
   }
 }
