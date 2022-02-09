@@ -1,3 +1,20 @@
+:root {
+  --primery-background-color: #ffffff;
+  --secondary-background-color: #2f303a;
+  --third-background-color: #f5f4fa;
+  --primery-color: #757575;
+  --secondary-color: #ffffff;
+  --title-color: #212121;
+  --accent-color: #2196f3;
+  --main-font: 'Roboto', sans-serif;
+  --title-font: 'Raleway', sans-serif;
+  --h2: 28px;
+  --header-height: 80px;
+  --gallery-gap: 30px;
+  --time-action: 250ms;
+  --time-distribution-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* --- Visually Hidden --- */
 .visually-hidden {
   position: absolute !important;
@@ -12,8 +29,26 @@
 }
 
 /* --- Common Files --- */
+html {
+  box-sizing: border-box;
+}
+
 body {
+  padding-top: 60px;
+  background: var(--primery-background-color);
+  color: var(--primery-color);
   font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  outline: 1px solid magenta;
 }
 
 .list {
@@ -55,7 +90,6 @@ img {
 }
 
 /* --- Container --- */
-/* responsive-mobile */
 .container {
   width: 100%;
   padding: 0 15px;
@@ -65,31 +99,29 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: var(#ffffff);
 }
 
-/* adaptive-mobile */
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
     margin: 0 auto;
   }
 }
 
-/* adaptive-tablet */
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
-  .container .header {
+  .header .container {
     display: flex;
     align-items: center;
   }
 }
 
-/* adaptive-desktop */
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
   .hero .container {
     display: flex;
@@ -100,8 +132,7 @@ img {
   }
 }
 
-/* --- Section --- 
-
+/* --- Section --- */
 .section {
   margin: 60px 0 0 0;
   overflow: hidden;
@@ -114,7 +145,6 @@ img {
   }
 }
 
-
 @media screen and (min-width: 768px) {
   .section {
     margin: 60px 0 0 0;
@@ -122,13 +152,13 @@ img {
   }
 }
 
-
 @media screen and (min-width: 1200px) {
   .section {
     margin: 94px 0 0 0;
     overflow: hidden;
   }
-}*/
+}
+
 /* --- Modal BTN --- */
 .modal-btn {
   min-width: 200px;
@@ -245,6 +275,13 @@ img {
 
 /* header-adaptive-mobile */
 .header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: var(--primery-background-color);
+  height: 60px;
   border-bottom: 1px solid #ececec;
   /*header mail*/
   /*header mail logo*/

@@ -1,6 +1,24 @@
 /* --- Common Files --- */
+html {
+  box-sizing: border-box;
+}
+
 body {
+  padding-top: 60px;
+  background: var(--primery-background-color);
+  color: var(--primery-color);
   font-family: $main-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  outline: 1px solid magenta;
 }
 
 .list {

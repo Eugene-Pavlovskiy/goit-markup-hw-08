@@ -1,5 +1,12 @@
 /* header-adaptive-mobile */
 .header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: var(--primery-background-color);
+  height: 60px;
   border-bottom: 1px solid #ececec;
 
   .brand__logo {
