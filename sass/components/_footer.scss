@@ -1,0 +1,209 @@
+.footer-container {
+  @media screen and(max-width:767px) {
+    justify-content: center;
+  }
+  @media screen and(min-width:1200px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+
+.footer {
+  padding-left: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $dark-bg;
+  color: $text-white;
+  text-decoration: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.logo-studio-footer {
+  margin-bottom: 20px;
+  color: $text-white;
+  line-height: 1.2;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.footer-contakts__item {
+  display: block;
+  padding-left: 0;
+}
+.footer-address {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  color: $text-white;
+  line-height: 1.14;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  margin-bottom: 9px;
+  margin-top: 20px;
+  transition: background-color $animation, color $animation;
+
+  .footer &:hover,
+  .footer &:focus {
+    color: $btn-cl;
+  }
+}
+.footer-contakts__list {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.7;
+
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+.footer-contakts {
+  color: rgba(255, 255, 255, 0.6);
+  .footer &:hover,
+  .footer &:focus {
+    color: $btn-cl;
+  }
+  &__title:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.post {
+  @media screen and(max-width:767px) {
+    text-align: center;
+    margin-bottom: 60px;
+    margin-left: 0;
+    width: 100%;
+  }
+  @media screen and(max-width:1119px) {
+    text-align: center;
+  }
+
+  @media screen and(min-width:1119px) {
+    width: 50%;
+  }
+  @media screen and(min-width:1200px) {
+    margin-right: 70px;
+
+    max-width: 270px;
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+}
+.footer-contakts__item {
+  padding-left: 0px;
+  margin: 0px;
+}
+
+.footer-social {
+  @media screen and(max-width:1199px) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  @media screen and(min-width:1200px) {
+    //width: 206px;
+    display: block;
+    margin-right: 73px;
+  }
+  //padding-right: 93px;
+}
+.footer-social {
+  &__title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $text-white;
+    //display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+}
+.footer-social__item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-social__list {
+  justify-content: center;
+  display: flex;
+}
+
+.footer-social__link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  text-decoration: none;
+  fill: $text-white;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color $animation, color $animation;
+
+  &:hover,
+  &:focus {
+    color: $text-white;
+    background-color: $btn-cl;
+  }
+}
+
+.footer-subscribtion {
+  @media screen and(max-width:1200px) {
+    text-align: center;
+    display: block;
+  }
+}
+.footer-social__form {
+  @media (min-width: 1119.98px) {
+    display: block;
+  }
+  @media screen and(min-width:1200px) {
+    display: flex;
+  }
+}
+
+.footer-btn {
+  @media screen and(max-width:1119px) {
+    margin-top: 22px;
+  }
+  justify-content: center;
+
+  align-items: center;
+  @media (min-width: 1200px) {
+    display: flex;
+  }
+}
+.user-subscribtion {
+  @media (min-width: 1200px) {
+    flex-basis: 570px;
+    display: flex;
+    justify-content: center;
+    width: 358px;
+  }
+}
+.user-subscribtion input {
+  width: 100%;
+  max-width: 450px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  margin-right: 10px;
+}
+.subscribtion-input {
+  padding: 15px 16px;
+}
